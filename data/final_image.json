@@ -1,0 +1,163 @@
+{
+  "camera": {
+    "type": "perspective",
+    "focal_length": 1,
+    "eye": [0,-0.39,2],
+    "up": [0,1,0],
+    "look": [0,0,-1],
+    "height": 1,
+    "width": 1.576655052
+  },
+
+  "lights":[
+	{
+      "type": "directional",
+      "direction": [0,0,-1],
+      "color": [0.85,0.85,0.8]
+  },
+	{
+		"type": "point",
+		"position": [-10,20,10],
+		"color": [0.85,0.85,0.8]
+	}
+
+  ],
+
+  "materials": [
+    {
+      "name": "red metal",
+      "ka": [0.894118,0.101961,0.109804],
+      "kd": [0.894118,0.101961,0.109804],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.1,0.1,0.1],
+      "phong_exponent": 500,
+			"transmittance": 0.0,
+			"albedo": 1,
+			"cl": 1.0,
+			"ct": 1.52
+    },
+    {
+      "name": "grey",
+      "ka": [0.208, 0.208, 0.208],
+      "kd": [0.208, 0.208, 0.208],
+      "ks": [0.3,0.3,0.3],
+      "km": [0.1,0.1,0.1],
+      "phong_exponent": 200,
+			"transmittance": 0.0,
+			"albedo": 1,
+			"cl": 1.0,
+			"ct": 1
+    },
+		{
+      "name": "white",
+      "ka": [0.98, 0.97, 0.92],
+      "kd": [0.98, 0.97, 0.9],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.1,0.1,0.1],
+      "phong_exponent": 200,
+			"transmittance": 0.0,
+			"albedo": 1,
+			"cl": 1,
+			"ct": 1
+    },
+		{
+      "name": "glass",
+      "ka": [0.6, 0.6, 0.6],
+      "kd": [0, 0, 0],
+      "ks": [1,1,1],
+      "km": [0,0,0],
+			"transmittance": 0.9,
+			"albedo": 0.1,
+			"cl": 1.0,
+			"ct": 1.52,
+      "phong_exponent": 1000
+    },
+		{
+      "name": "diamond",
+      "ka": [0.8, 0.8, 0.8],
+      "kd": [0, 0, 0],
+      "ks": [1,1,1],
+      "km": [0,0,0],
+			"transmittance": 0.9,
+			"albedo": 0.1,
+			"cl": 1.0,
+			"ct": 2.417,
+      "phong_exponent": 1000
+    },
+		{
+      "name": "saphire",
+      "ka": [0.8, 0.8, 0.8],
+      "kd": [0, 0, 0],
+      "ks": [1,1,1],
+      "km": [0,0,0],
+			"transmittance": 0.9,
+			"albedo": 0.1,
+			"cl": 1.0,
+			"ct": 1.71,
+      "phong_exponent": 1000
+    },
+		{
+      "name": "window",
+      "ka": [0, 0, 0],
+      "kd": [0, 0, 0],
+      "ks": [0,0,0],
+      "km": [0,0,0],
+			"transmittance": 0.9,
+			"albedo":1.0,
+			"cl": 1.0,
+			"ct": 1.0,
+      "phong_exponent": 1000
+		},
+		{
+      "name": "invisible",
+      "ka": [0, 0, 0],
+      "kd": [0, 0, 0],
+      "ks": [0,0,0],
+      "km": [0.4,0.4,0.4],
+			"transmittance": 0.9,
+			"albedo": 1.0,
+			"cl": 1.0,
+			"ct": 1.0,
+      "phong_exponent": 1000
+}
+  ],
+
+  "objects": [
+		{
+			"material": "window",
+			"type": "plane",
+			"point": [0,0,-1.42],
+			"normal": [0,0,1]
+		},
+		{
+      "material": "invisible",
+      "type": "plane",
+      "point": [0,-1,0],
+      "normal": [0,1,0]
+    },
+	 		{
+      "type": "sphere",
+      "material": "saphire",
+      "center": [-0.9,-0.75,0.25],
+      "radius": 0.25
+    },
+		{
+      "type": "soup",
+      "material": "diamond",
+      "stl": "bunny.stl",
+			"scale": 0.7,
+			"trans": [0.03,-0.51,0],
+			"theta_y": 0
+   	},
+		{
+      "type": "soup",
+      "material": "glass",
+      "stl": "skull.stl",
+			"scale": 0.7,
+			"trans": [0.45,-0.9,0.3],
+			"theta_y": -30
+   }
+
+  ]
+}
+
