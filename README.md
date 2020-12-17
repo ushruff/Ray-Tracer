@@ -19,10 +19,11 @@
 ## Instruction to run ray tracer
 
 ### Instructions for compiling:
-	* OpenMP must be installed
-	* OpenMP is extremely difficult to use with cmake on MacOS
+	OpenMP must be installed
+	OpenMP is extremely difficult to use with cmake on MacOS
 
-The following cmake command worked for me on MacOS. Source: https://github.com/oneapi-src/oneDNN/issues/591
+The following cmake command worked for me on macOS Catalina:
+Source: https://github.com/oneapi-src/oneDNN/issues/591
 
 Please update paths to match yours.
 
